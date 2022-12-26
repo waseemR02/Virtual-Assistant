@@ -22,6 +22,9 @@ class ListenerEngine:
 
     def listen(self):
 
+        # When no command is given
+        command = "---"
+
         with sr.Microphone(device_index=self.device) as source:
             self.listener.adjust_for_ambient_noise(source)
             print('listening...')
