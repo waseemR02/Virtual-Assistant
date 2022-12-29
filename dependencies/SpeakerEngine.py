@@ -30,3 +30,4 @@ class SpeakerEngine:
     def speak(self, string):
         self.engine.say(string)
         self.engine.runAndWait()
+        print("done..")
