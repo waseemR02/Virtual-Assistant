@@ -44,7 +44,7 @@ class Assistant:
         elif ("is today's date" in query) or ("is the date today" in query):
             self.se.speak(self.temporal.datenow())
 
-        elif "shut down yourself" in query:
+        elif "kill your process" in query:
             try:
                 print("Terminating..")
                 os._exit()
