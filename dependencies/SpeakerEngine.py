@@ -5,11 +5,10 @@ class SpeakerEngine:
     '''
     SpeakerEngine initializes the 'engine' for speech capabilities for the assistant. It's defaults are 
     * rate=150
-    * voice=f5.\n
+    * voice=male.\n
     There are other voices available in the host system such as 
-    * f1, f2, ...f5
-    * mb-us1 (mbrola for less robotic and stiff sound)
-    * m1, m2, ...m5
+    * 1 - female
+    * 0 - male
     '''
 
     def __init__(self, rate: int = 150, voice: str = 'f5'):
@@ -18,7 +17,10 @@ class SpeakerEngine:
             self.engine = pyttsx3.init()
 
             # setting voice for speech synthesizer
-            self.engine.setProperty('voice', voice)
+            # 1 is for female and 0 is for male but if female voice
+            # is not present it defaults to male
+            voices = self.engine.getProperty('voice') 
+            self.engine.setProperty('voice', voices[1])
 
             # Speech rate set to 150
             self.engine.setProperty('rate', rate)
