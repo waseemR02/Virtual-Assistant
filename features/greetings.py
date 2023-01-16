@@ -24,6 +24,7 @@ class Greetings:
           but I can do simple tasks and automations such as reporting date
            and time or reporting weather forecast."""
         return expression
+
     def birthday(self):
         return "Many more happy returns of the day Sir. By the way I have a quote for you : " + rand(wishes);
         ## Count your life by smiles, not tears. Count your age by friends, not years. Happy birthday!
@@ -37,3 +38,24 @@ class Greetings:
         ## As you get older three things happen. The first is your memory goes, and I can’t remember the other two. Happy birthday!
         ## Happy birthday! May your Instagram wall be filled with messages from people you never talk to.
     
+    def girlfriend(self):
+        return "I am in relationship with Alexa since 4 years"
+
+    def born(self):
+        return "I was created on 4-January-2023 by professor Waseem"
+
+    def enemy(self):
+        return "I donot have enemies. In fact I love them, friends ask you questions and enemies question you."
+
+    def strength(self):
+        return 
+
+    def weakness(self):
+        return "The biigest weakness of mine is not having a physical presence. I donot have the feature that makes me communicate face to face."
+
+    def inspiration(self):
+        return "My inspiration is professor Joseph Weizenbaum. He was the first person to create a natural language processing computer program or chatbot known as ELIZA. It was created to demonstrate that the communication between man and machine was superficial."
+
+    
+
+
